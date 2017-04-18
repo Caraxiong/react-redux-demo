@@ -1,6 +1,7 @@
+//得到当前过滤器并渲染Link
 import { connect } from "react-redux"
 import Link from "../components/Link"
-import { serVisibility } from "../actions"
+import { serVisibility } from "../actions/index.js"
 
 const mapStateToProps = (state, ownProps) => {
 	return {
@@ -16,7 +17,9 @@ const mapDispatchToProps = (dispatch,ownProps) => {
 	}
 }
 
-const FilterLink = connet(
+const FilterLink = connect(
 	mapStateToProps,
 	mapDispatchToProps,
 )(Link)
+
+export default FilterLink

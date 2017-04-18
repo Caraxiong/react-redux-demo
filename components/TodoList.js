@@ -3,7 +3,7 @@ import Todo from "./Todo"
 const TodoList = ({todos, onTodoClick}) => {
 	<ul>
 		{todos.map(todo => {
-			<Todo 
+			<Todo
 				key = {todo.id}
 				{...todo}
 				onclick={() => onTodoClick(todo.id)} />
@@ -11,3 +11,4 @@ const TodoList = ({todos, onTodoClick}) => {
 		})}
 	</ul>
 }
+export default TodoList

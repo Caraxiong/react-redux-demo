@@ -4,3 +4,5 @@ const Todo = ({onclick,conpleted, text}) => {
 		style={{textDecoration:completed?"line-through":"none"}}>
 	</li>
 }
+
+export default Todo
